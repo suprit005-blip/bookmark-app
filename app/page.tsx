@@ -7,8 +7,8 @@ export default function Home() {
 
   const [title, setTitle] = useState("");
   const [url, setUrl] = useState("");
-  const [bookmarks, setBookmarks] = useState([]);
-  const [editingId, setEditingId] = useState(null);
+  const [bookmarks, setBookmarks] = useState<any[]>([]);
+  const [editingId, setEditingId] = useState<number | null>(null);
 
   // Fetch bookmarks
   async function getBookmarks() {
@@ -18,7 +18,7 @@ export default function Home() {
       .order("id", { ascending: false });
 
     if (!error) {
-      setBookmarks(data);
+      setBookmarks(data || []);
     }
   }
 
@@ -52,7 +52,7 @@ export default function Home() {
   }
 
   // Delete bookmark
-  async function deleteBookmark(id) {
+  async function deleteBookmark(id: number) {
 
     await supabase
       .from("bookmarks")
