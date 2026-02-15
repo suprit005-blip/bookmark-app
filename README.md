@@ -44,16 +44,7 @@ How It Works
 6. Each user only sees their own bookmarks
 
 
-Project Structure
 
-bookmark-app/
-│
-├── app/
-├── lib/
-├── public/
-├── README.md
-├── package.json
-└── next.config.ts
 
 
 Installation (Optional for Local Setup)
@@ -76,9 +67,6 @@ https://bookmark-app-neon.vercel.app
 
 
 
-Author
-
-Suprit
 
 
 Assignment Submission Details
