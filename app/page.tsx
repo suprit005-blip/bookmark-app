@@ -10,6 +10,16 @@ export default function Home() {
   const [bookmarks, setBookmarks] = useState<any[]>([]);
   const [editingId, setEditingId] = useState<number | null>(null);
 
+  async function signInWithGoogle() {
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+  });
+
+  if (error) {
+    alert("Error logging in");
+  }
+}
+
   // Fetch bookmarks
   async function getBookmarks() {
     const { data, error } = await supabase
@@ -86,8 +96,24 @@ export default function Home() {
       }}>
 
         <h2 style={{ textAlign: "center" }}>
-          🚀 Bookmark App
-        </h2>
+  Bookmark App
+</h2>
+
+<button
+  onClick={signInWithGoogle}
+  style={{
+    width: "100%",
+    backgroundColor: "#4285F4",
+    color: "white",
+    padding: "10px",
+    marginBottom: "10px",
+    borderRadius: "5px",
+    border: "none",
+    cursor: "pointer"
+  }}
+>
+  Sign in with Google
+</button>
 
         <input
           placeholder="Enter Title"
