@@ -46,7 +46,7 @@ How It Works
 5. Users can edit or delete bookmarks
 6. Each user only sees their own bookmarks
 
----
+
 
 
 
@@ -71,7 +71,7 @@ This project is deployed using Vercel.
 Live URL:
 https://bookmark-app-neon.vercel.app
 
----
+
 
 
 
