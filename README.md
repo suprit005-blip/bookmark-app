@@ -10,6 +10,7 @@ GitHub Repository
 
 https://github.com/suprit005-blip/bookmark-app
 
+---
 
 Features
 
@@ -22,6 +23,7 @@ Features
 - Responsive UI with clean design
 - Deployed on Vercel
 
+---
 
 Tech Stack
 
@@ -33,6 +35,7 @@ Tech Stack
 - Deployment: Vercel
 - Version Control: GitHub
 
+---
 
 How It Works
 
@@ -43,9 +46,11 @@ How It Works
 5. Users can edit or delete bookmarks
 6. Each user only sees their own bookmarks
 
+---
 
 
 
+---
 
 Installation (Optional for Local Setup)
 
@@ -57,6 +62,7 @@ npm install
 
 npm run dev
 
+---
 
 Deployment
 
@@ -65,9 +71,11 @@ This project is deployed using Vercel.
 Live URL:
 https://bookmark-app-neon.vercel.app
 
+---
 
 
 
+---
 
 Assignment Submission Details
 
@@ -78,7 +86,7 @@ Assignment Submission Details
 - GitHub Repository: Provided
 - Live Deployment: Completed
 
-
+---
 
 Conclusion
 
