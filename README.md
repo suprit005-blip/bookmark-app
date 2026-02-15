@@ -1,23 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Smart Bookmark App
+
+A simple bookmark manager built using Next.js, Supabase, and Google OAuth. Users can sign in with their Google account and manage their personal bookmarks securely.
+
+Live Demo
+
+https://bookmark-app-neon.vercel.app
+
+GitHub Repository
+
+https://github.com/suprit005-blip/bookmark-app
 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Sign in using Google (OAuth authentication)
+- Add new bookmarks (Title and URL)
+- Edit existing bookmarks
+- Delete bookmarks
+- Each user's bookmarks are private
+- Real-time updates without page refresh
+- Responsive UI with clean design
+- Deployed on Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
- Learn More
+Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Frontend: Next.js (App Router)
+- Backend: Supabase
+- Authentication: Supabase Auth with Google OAuth
+- Database: Supabase PostgreSQL
+- Styling: Tailwind CSS
+- Deployment: Vercel
+- Version Control: GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+How It Works
 
-## Deploy on Vercel
+1. User signs in using Google account
+2. Supabase authenticates the user securely
+3. User can add bookmarks with title and URL
+4. Bookmarks are stored in Supabase database
+5. Users can edit or delete bookmarks
+6. Each user only sees their own bookmarks
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Project Structure
+
+bookmark-app/
+│
+├── app/
+├── lib/
+├── public/
+├── README.md
+├── package.json
+└── next.config.ts
+
+
+Installation (Optional for Local Setup)
+
+git clone https://github.com/suprit005-blip/bookmark-app.git
+
+cd bookmark-app
+
+npm install
+
+npm run dev
+
+
+Deployment
+
+This project is deployed using Vercel.
+
+Live URL:
+https://bookmark-app-neon.vercel.app
+
+
+
+Author
+
+Suprit
+
+
+Assignment Submission Details
+
+- Google OAuth Authentication: Implemented
+- Private Bookmarks: Implemented
+- Add/Edit/Delete Bookmarks: Implemented
+- Real-time Updates: Implemented
+- GitHub Repository: Provided
+- Live Deployment: Completed
+
+
+
+Conclusion
+
+This project successfully implements a secure, real-time bookmark manager using modern web technologies including Next.js, Supabase, and Google OAuth.
