@@ -23,7 +23,7 @@ Features
 - Responsive UI with clean design
 - Deployed on Vercel
 
----
+-------
 
 Tech Stack
 
